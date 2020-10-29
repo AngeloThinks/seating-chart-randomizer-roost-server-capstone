@@ -6,7 +6,7 @@ Use `npm run setup` to set up your project automatically. See **Scripts** for de
 
 If `npm run setup` fails, or you want to configure manually, complete the following steps to start a new project:
 
-1. Clone this repository to your local machine `git clone https://github.com/s-poveda/express-boilerplate [NEW-PROJECT-NAME]`
+1. Clone this repository to your local machine `git clone https://github.com/AngeloThinks/express-boilerplate.git [NEW-PROJECT-NAME]`
 2. `cd` into the cloned repository
 3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
 4. Install the node dependencies 'npm init -y', 'npm i', 'npm i express morgan cors dotenv helmet'
