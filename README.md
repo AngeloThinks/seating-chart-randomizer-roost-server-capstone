@@ -9,7 +9,7 @@ If `npm run setup` fails, or you want to configure manually, complete the follow
 1. Clone this repository to your local machine `git clone https://github.com/s-poveda/express-boilerplate [NEW-PROJECT-NAME]`
 2. `cd` into the cloned repository
 3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
+4. Install the node dependencies 'npm init -y', 'npm i', 'npm i express morgan cors dotenv helmet'
 5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
 6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
 
