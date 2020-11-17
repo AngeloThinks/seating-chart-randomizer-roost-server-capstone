@@ -10,9 +10,11 @@
     "dev": "nodemon src/server.js",
     "test": "mocha --require test/setup.js",
     "tw": "mocha -- --watch --require test/setup.js",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku main"
   },
   "keywords": [],
+  "engines": {
+    "node": "10.11.0"},
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -24,6 +26,7 @@
     "morgan": "^1.10.0",
     "pg": "^8.4.2",
     "postgrator": "^4.1.1",
+    "serve": "^11.3.2",
     "winston": "^3.3.3",
     "xss": "^1.0.8"
   },
