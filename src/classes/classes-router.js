@@ -16,7 +16,8 @@ classesRouter
     const knex = req.app.get("db");
     classesService
       .getAllClasses(knex)
-      .then((classes) => res.json(classes.map(serializeClasses)))
+      .then((classes) => {res.json(classes.map(serializeClasses));
+      })
       .catch(next);
   })
   .post(bodyParser, (req, res, next) => {

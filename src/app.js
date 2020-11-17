@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const studentsRouter = require('./students/students-router'); 
 const teachersRouter = require('./teachers/teachers-router');
-const classesRouter = require('./classes/classes-Router');
+const classesRouter = require('./classes/classes-router');
 
 const app = express();
 
