@@ -87,9 +87,20 @@ Register Page
 
 ### 8. API Documentation (to do later)
 API Documentation details:
-* (Example) get all users
-
-
+* GET/students
+    * URL: http://localhost:8000/students
+    * Response: 
+        ```json
+        [
+            {
+                "id": "2",
+                "teachers_id": "1",
+                "classes_id": "1",
+                "first_name": "Biron",
+                "last_name": "Doge"
+            }
+        ]
+        ```
 
 ### 9. Screenshots (to do later)
 (Example) Landing Page

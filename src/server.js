@@ -6,7 +6,7 @@ const knex = require("knex");
 
 const db = knex({
   client: "pg",
-  connection: NODE_ENV === "test" ? TEST_DATABASE_URL : DATABASE_URL,
+ connection: NODE_ENV === "test" ? TEST_DATABASE_URL : DATABASE_URL,
 });
 
 app.set("db", db);
