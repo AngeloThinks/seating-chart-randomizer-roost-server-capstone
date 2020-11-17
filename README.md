@@ -1,44 +1,121 @@
-# express-boilerplate
-Basic boilerplate for initializing express projects
-
-## Set up
-Use `npm run setup` to set up your project automatically. See **Scripts** for defaults.
-
-If `npm run setup` fails, or you want to configure manually, complete the following steps to start a new project:
-
-1. Clone this repository to your local machine `git clone https://github.com/AngeloThinks/express-boilerplate.git [NEW-PROJECT-NAME]`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies 'npm init -y', 'npm i', 'npm i express morgan cors dotenv helmet'
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
-
-## Scripts
-
-Set up the application `npm run setup -- [name of your project]`
-
-- `package.json`
-
-	* `name` will be the current directory name if no argument is passed. Always lower case.
+# Capstone Project Title (to do now)
+<!-- One line description of what this app is doing and who is it for -->
+Roost - An app designed for teachers to randomize seating charts.
 
 
-- `example.env` will be replaced with `.env`
+### 1. Working Prototype (to do later)
+(Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
 
 
-- Git history will be reinitialized.
+
+### 2. User Stories (to do now)
+This app is for two types of users: a visitor and a logged-in user
+
+###### (Example) Landing Page (Importance - High) (Est: 1h)
+* as a visitor
+* I want to understand what I can do with this app (or sign up, or log in)
+* so I can decide if I want to use it
+
+###### (Example) Login Page (Importance - High) (Est: 3h)
+* As a returning register user
+* I want to enter my password and username to use this app,
+* So I can have access to my account.
+
+###### (Example) Sign Up (Importance - High)  (Est: 3h)
+* As a visitor
+* I want to register to use this app
+* So I can create a personal account.
+
+###### (Example) Home Page (Importance - Medium)  (Est: 2h)
+* As a logged-in user,
+* I want to be able to preview the content of the app,
+* So i can decide what section I want to navigate to.
 
 
-- Installs all dependencies
+
+### 3. Functionality (to do now)
+The app's functionality includes:
+* (Example) Every User has the ability to create an account
 
 
-Start the application `npm start`
 
-Start nodemon for the application `npm run dev`
+### 4. Technology (done)
+* Front-End: HTML5, CSS3, JavaScript ES6, React
+* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+* Development Environment: Heroku, DBeaver
 
-Run the tests `npm test`
 
-Run the tests and watch for changes `npm tw`
 
-## Deploying
+### 5. Wireframes (to do now)
+(Example) Landing Page
+:-------------------------:
+![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
+Register Page
+![Register Page](/github-images/wireframes/register-page-wireframe.png)
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+
+
+### 6. Front-end Structure - React Components Map (to do later)
+* (Example) __Index.js__ (stateless)
+    * __App.js__ (stateful)
+        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
+            * __Login.js__ (stateful) -
+            * __Register.js__ (stateful) -
+        * __Navbar.js__ (stateless) -
+
+
+
+### 7. Back-end Structure - Business Objects (to do later)
+* teachers (database table)(parent to students to table)
+    * id (auto-generated)
+    * first_name (varchar255) (validation alpha characters with spaces min.3 max.255)
+    * last_name (varchar255) (validation alpha characters with spaces min.3 max.255)
+    * email (varchar255) (email validation)
+    * password (varchar255) (at least 8 chars, at least one alpha and a special character validation)
+
+* classes (database table)(parent to students table)
+    * id (auto-generated)
+	* name (varchar255) (validation alpha characters with spaces min.3 max.255)
+
+* students (database table) (child to both teachers and classes table)
+    * id (auto-generated)
+    * teacher_id FOREIGN KEY TO TEACHERS TABLE (auto-generated)
+    * classes_id FOREIGN KEY TO CLASSES TABLE (auto-generated)
+	* first_name (varchar255) (validation alpha characters with spaces min.3 max.255)
+    * last_name (varchar255) (validation alpha characters with spaces min.3 max.255)
+
+
+### 8. API Documentation (to do later)
+API Documentation details:
+* (Example) get all users
+
+
+
+### 9. Screenshots (to do later)
+(Example) Landing Page
+:-------------------------:
+![Landing Page](/github-images/screenshots/landing-page-screenshot.png)
+Register Page
+![Register Page](/github-images/screenshots/register-page-screenshot.png)
+
+
+
+### 10. Development Roadmap (to do later)
+This is v1.0 of the app, but future enhancements are expected to include:
+* (Example) add more functionality
+
+
+
+### 11. How to run it (done) enter Git clone commands
+Use command line to navigate into the project folder and run the following in terminal
+
+##### Local React scripts
+* To install the react project ===> npm install
+* To run react (on port 3000) ===> npm start
+* To run tests ===> npm run test
+
+##### Local Node scripts
+* To install the node project ===> npm install
+* To migrate the database ===> npm run migrate -- 1
+* To run Node server (on port 8000) ===> npm run dev
+* To run tests ===> npm run test

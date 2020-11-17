@@ -1,0 +1,18 @@
+{"message":"teacher with id 2 created","level":"info"}
+{"message":"class_name is missing","level":"error"}
+{"message":"class_name is missing","level":"error"}
+{"message":"student with id 31 created","level":"info"}
+{"message":"Classes with id 3 created","level":"info"}
+{"message":"Teachers with id 2 deleted","level":"info"}
+{"message":"Classes with id 2 deleted","level":"info"}
+{"message":"teacher with id 2 updated","level":"info"}
+{"message":"teacher with id 2 updated","level":"info"}
+{"message":"teacher with id 2 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"classes with id 2 updated","level":"info"}
+{"message":"student with id 1 updated","level":"info"}

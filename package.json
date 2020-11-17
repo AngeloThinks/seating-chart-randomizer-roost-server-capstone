@@ -1,17 +1,16 @@
 {
-  "name": "express-boilerplate",
+  "name": "roost-server",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",
   "scripts": {
-		"presetup": "[ -f \"./example.env\" ]  && (mv example.env .env && echo created '.env' file successfully) || echo \"'no example.env.' Skipping...\"",
+    "presetup": "[ -f \"./example.env\" ]  && (mv example.env .env && echo created '.env' file successfully) || echo \"'no example.env.' Skipping...\"",
     "setup": "node setup.js && rm -rf ./.git && git init && npm i",
-		"start": "node src/server.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-		"test": "mocha --require test/setup.js",
-		"tw": "mocha -- --watch --require test/setup.js",
-		"predeploy": "npm audit",
-		"deploy": "git push heroku master"
+    "test": "mocha --require test/setup.js",
+    "tw": "mocha -- --watch --require test/setup.js",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
   "author": "",
@@ -20,13 +19,19 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "helmet": "^4.1.1",
-    "morgan": "^1.10.0"
+    "helmet": "^4.2.0",
+    "knex": "^0.21.12",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2",
+    "postgrator": "^4.1.1",
+    "winston": "^3.3.3",
+    "xss": "^1.0.8"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.2.0",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.6",
+    "postgrator-cli": "^4.0.0",
     "supertest": "^5.0.0"
   }
 }

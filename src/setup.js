@@ -1,5 +1,5 @@
 const fs = require('fs');
-const package = require('./package.json');
+const package = require('../package.json');
 
 const passedName = JSON.parse(process.env.npm_config_argv).remain[0];
 const currDirName = process.env.PWD.split('/');
