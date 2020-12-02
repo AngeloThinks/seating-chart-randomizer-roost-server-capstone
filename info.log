@@ -17,3 +17,41 @@
 {"message":"classes with id 2 updated","level":"info"}
 {"message":"student with id 1 updated","level":"info"}
 {"message":"teacher with id 1 updated","level":"info"}
+{"message":"student with id 29 created","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"student with id 30 created","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"classes_id is missing","level":"error"}
+{"message":"classes_id is missing","level":"error"}
+{"message":"student with id 32 created","level":"info"}
+{"message":"student with id 33 created","level":"info"}
+{"message":"student with id 34 created","level":"info"}
+{"message":"student with id 35 created","level":"info"}
+{"message":"student with id 36 created","level":"info"}
+{"message":"Classes with id 3 created","level":"info"}
+{"message":"Classes with id 4 created","level":"info"}
+{"message":"student with id 37 created","level":"info"}
+{"message":"student with id 38 created","level":"info"}
+{"message":"Classes with id 5 created","level":"info"}
+{"message":"student with id 39 created","level":"info"}
+{"message":"Classes with id 6 created","level":"info"}
+{"message":"student with id 40 created","level":"info"}
+{"message":"student with id 41 created","level":"info"}
+{"message":"student with id 42 created","level":"info"}
+{"message":"Classes with id 7 created","level":"info"}
+{"message":"student with id 43 created","level":"info"}
+{"message":"student with id 44 created","level":"info"}
+{"message":"student with id 45 created","level":"info"}
+{"message":"student with id 46 created","level":"info"}
+{"message":"student with id 47 created","level":"info"}

@@ -5,6 +5,22 @@ const studentsService = {
   getStudentsById(knex, id) {
     return knex.from("students").where("id", id).first();
   },
+
+  getStudentsByTeacherId(knex, teachers_id, classes_id) {
+    // knex raw is sql query which needs to be excuted by knex without any shortcuts (ex:.select('*') .where('recipes.id', recipes_id))
+    return knex.raw(`
+                SELECT	
+                    *
+                FROM 
+                  students
+                WHERE 
+                  teachers_id = ${teachers_id} and classes_id =  ${classes_id}
+                ORDER BY
+                  random();
+                `);
+  },
+  //in the front-end you will make a API call with the url exactly from postman student randomize - This will be the endpoint
+
   addStudents(knex, students) {
     return knex
       .from("students")

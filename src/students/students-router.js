@@ -13,6 +13,34 @@ const serializeStudent = (students) => ({
   last_name: xss(students.last_name),
 });
 
+// randomize method/function
+studentsRouter
+  .route("/randomize/:classes_id/:teachers_id")
+  .all((req, res, next) => {
+
+    const { classes_id, teachers_id } = req.params;
+    console.log(classes_id,"This is the classes" , teachers_id, "this is the teachers")
+
+    studentsService
+      .getStudentsByClassesId(req.app.get("db"), classes_id, teachers_id)
+      .then((students) => {
+        if (!students) {
+          logger.error(`Student with id ${classes_id} not found`);
+          return res
+            .status(404)
+            .json({ error: { message: "student not found" } });
+        }
+        res.students = students.rows;
+        next();
+      })
+      .catch(next);
+  })
+  .get((req, res, next) => {
+    const students = res.students;
+    res.json(students.map(serializeStudent));
+  })
+
+//getAllStudents Router
 studentsRouter
   .route("/")
   .get((req, res, next) => {
@@ -58,11 +86,11 @@ studentsRouter
   });
 
 studentsRouter
-  .route("/")
+  .route("/:students_id")
   .all((req, res, next) => {
     const { students_id } = req.params;
     studentsService
-      .getstudentById(req.app.get("db"), students_id)
+      .getStudentsById(req.app.get("db"), students_id)
       .then((students) => {
         if (!students) {
           logger.error(`Student with id ${students_id} not found`);
@@ -91,15 +119,19 @@ studentsRouter
         res.status(204).end();
       })
       .catch(next);
-  });
-  //PATCH students request function
-  studentsRouter
-  .route('/:id').patch(bodyParser, (req, res, next) => {
-    const {teachers_id,classes_id,first_name,last_name} = req.body;
-    const {id} = req.params;
-    const studentsUpdates = {id,teachers_id,classes_id,first_name,last_name}
+  })
+   //PATCH students request function
+   .patch(bodyParser, (req, res, next) => {
+    const { teachers_id, classes_id, first_name, last_name } = req.body;
+    const { students_id } = req.params;
+    const studentsUpdates = {
+      id: students_id,
+      teachers_id,
+      classes_id,
+      first_name,
+      last_name,
+    };
     console.log("studentsUpdates", studentsUpdates);
-  
 
     if (Object.keys(studentsUpdates).length == 0) {
       logger.info(`student must have values to update`);
@@ -108,9 +140,9 @@ studentsRouter
       });
     }
     studentsService
-      .updateStudents(req.app.get("db"), id, studentsUpdates)
+      .updateStudents(req.app.get("db"), students_id, studentsUpdates)
       .then((updatedStudent) => {
-        logger.info(`student with id ${id} updated`);
+        logger.info(`student with id ${students_id} updated`);
         res.status(204).end();
       });
   });
