@@ -6,7 +6,7 @@ const studentsService = {
     return knex.from("students").where("id", id).first();
   },
 
-  getStudentsByTeacherId(knex, teachers_id, classes_id) {
+  getStudentsByClassesId(knex, classes_id) {
     // knex raw is sql query which needs to be excuted by knex without any shortcuts (ex:.select('*') .where('recipes.id', recipes_id))
     return knex.raw(`
                 SELECT	
@@ -14,7 +14,7 @@ const studentsService = {
                 FROM 
                   students
                 WHERE 
-                  teachers_id = ${teachers_id} and classes_id =  ${classes_id}
+                  classes_id =  ${classes_id}
                 ORDER BY
                   random();
                 `);

@@ -13,32 +13,7 @@ const serializeStudent = (students) => ({
   last_name: xss(students.last_name),
 });
 
-// randomize method/function
-studentsRouter
-  .route("/randomize/:classes_id/:teachers_id")
-  .all((req, res, next) => {
 
-    const { classes_id, teachers_id } = req.params;
-    console.log(classes_id,"This is the classes" , teachers_id, "this is the teachers")
-
-    studentsService
-      .getStudentsByClassesId(req.app.get("db"), classes_id, teachers_id)
-      .then((students) => {
-        if (!students) {
-          logger.error(`Student with id ${classes_id} not found`);
-          return res
-            .status(404)
-            .json({ error: { message: "student not found" } });
-        }
-        res.students = students.rows;
-        next();
-      })
-      .catch(next);
-  })
-  .get((req, res, next) => {
-    const students = res.students;
-    res.json(students.map(serializeStudent));
-  })
 
 //getAllStudents Router
 studentsRouter
@@ -145,6 +120,35 @@ studentsRouter
         logger.info(`student with id ${students_id} updated`);
         res.status(204).end();
       });
+  })
+
+
+// randomize method/function
+//remove teachers_id from randomize
+studentsRouter
+  .route('/randomize/:classes_id')
+  .get((req, res, next) => {
+
+    const { classes_id} = req.params;
+    console.log(classes_id,"This is the classes")
+
+    studentsService
+      .getStudentsByClassesId(req.app.get("db"), classes_id )
+      .then((students) => {
+        if (!students) {
+          logger.error(`Student with id ${classes_id} not found`);
+          return res
+            .status(404)
+            .json({ error: { message: "student not found" } });
+        }
+        res.students = students.rows;
+        next();
+      })
+      .catch(next);
+  })
+  .get((req, res, next) => {
+    const students = res.students;
+    res.json(students.map(serializeStudent));
   });
 
 module.exports = studentsRouter;
