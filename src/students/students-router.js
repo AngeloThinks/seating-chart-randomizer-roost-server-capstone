@@ -13,8 +13,6 @@ const serializeStudent = (students) => ({
   last_name: xss(students.last_name),
 });
 
-
-
 //getAllStudents Router
 studentsRouter
   .route("/")
@@ -28,6 +26,8 @@ studentsRouter
       })
       .catch(next);
   })
+
+  //Post request
   .post(bodyParser, (req, res, next) => {
     for (const field of [
       "teachers_id",
@@ -83,7 +83,7 @@ studentsRouter
     res.json(serializeStudent(students));
   })
 
-//delet students function
+  //delet students function
   .delete((req, res, next) => {
     const { students_id } = req.params;
 
@@ -95,8 +95,8 @@ studentsRouter
       })
       .catch(next);
   })
-   //PATCH students request function
-   .patch(bodyParser, (req, res, next) => {
+  //PATCH students request function
+  .patch(bodyParser, (req, res, next) => {
     const { teachers_id, classes_id, first_name, last_name } = req.body;
     const { students_id } = req.params;
     const studentsUpdates = {
@@ -120,20 +120,19 @@ studentsRouter
         logger.info(`student with id ${students_id} updated`);
         res.status(204).end();
       });
-  })
-
+  });
 
 // randomize method/function
 //remove teachers_id from randomize
 studentsRouter
-  .route('/randomize/:classes_id')
+  .route("/randomize/:classes_id")
   .get((req, res, next) => {
-
-    const { classes_id} = req.params;
-    console.log(classes_id,"This is the classes")
+    console.log("HELLO THERE")
+    const { classes_id } = req.params;
+    console.log(classes_id, "This is the classes");
 
     studentsService
-      .getStudentsByClassesId(req.app.get("db"), classes_id )
+      .getStudentsByClassesId(req.app.get("db"), classes_id)
       .then((students) => {
         if (!students) {
           logger.error(`Student with id ${classes_id} not found`);
@@ -141,14 +140,11 @@ studentsRouter
             .status(404)
             .json({ error: { message: "student not found" } });
         }
-        res.students = students.rows;
-        next();
+        res.json(students.rows.map(serializeStudent));
+
       })
       .catch(next);
   })
-  .get((req, res, next) => {
-    const students = res.students;
-    res.json(students.map(serializeStudent));
-  });
+  
 
 module.exports = studentsRouter;
