@@ -357,3 +357,5 @@
 {"message":"first_name is missing for teachers post","level":"error"}
 {"message":"teacher with id 1 updated","level":"info"}
 {"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"student with id 29 created","level":"info"}
+{"message":"student with id 30 created","level":"info"}
