@@ -10,7 +10,6 @@ const serializeTeacher = (teachers) => ({
   first_name: xss(teachers.first_name),
   last_name: xss(teachers.last_name),
   email: xss(teachers.email),
-  password: xss(teachers.password),
 });
 
 teachersRouter
@@ -26,7 +25,7 @@ teachersRouter
       .catch(next);
   })
   .post(bodyParser, (req, res, next) => {
-    for (const field of ["first_name", "last_name", "email", "password"]) {
+    for (const field of ["first_name", "last_name", "email"]) {
       if (!req.body[field]) {
         logger.error(`${field} is missing for teachers post`);
         return res
@@ -39,7 +38,6 @@ teachersRouter
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       email: req.body.email,
-      password: req.body.password,
     };
     // console.log(newteacher,'teachers-router')
     teachersService
@@ -91,9 +89,9 @@ teachersRouter.route("/:id").delete((req, res, next) => {
 //PATCH teachers request function
 teachersRouter
 .route('/:id').patch(bodyParser, (req, res, next) => {
-  const {first_name, last_name, email, password} = req.body;
+  const {first_name, last_name, email} = req.body;
   const {id} = req.params;
-  const teachersUpdates = {first_name, last_name, email, password}
+  const teachersUpdates = {first_name, last_name, email}
   console.log(teachersUpdates);
 
   if (Object.keys(teachersUpdates).length == 0) {

@@ -55,3 +55,305 @@
 {"message":"student with id 45 created","level":"info"}
 {"message":"student with id 46 created","level":"info"}
 {"message":"student with id 47 created","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"classes with id 1 updated","level":"info"}
+{"message":"Classes with id 1 deleted","level":"info"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"student with id 1 updated","level":"info"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}
+{"message":"Classes with id 1 created","level":"info"}
+{"message":"name is missing for classes post","level":"error"}
+{"message":"teachers_id is missing","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"first_name is missing for teachers post","level":"error"}
+{"message":"teacher with id 1 updated","level":"info"}
+{"message":"Teachers with id 1 deleted","level":"info"}

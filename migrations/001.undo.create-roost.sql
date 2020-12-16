@@ -1,3 +1,3 @@
-DROP TABLE teachers;
 DROP TABLE students;
-DROP TABLE classes
+DROP TABLE classes;
+DROP TABLE teachers

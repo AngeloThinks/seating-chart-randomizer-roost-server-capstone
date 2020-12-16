@@ -6,9 +6,9 @@ const studentsRouter = express.Router();
 const bodyParser = express.json();
 
 const serializeStudent = (students) => ({
-  id: xss(students.id),
-  teachers_id: xss(students.teachers_id),
-  classes_id: xss(students.classes_id),
+  id: students.id,
+  teachers_id: students.teachers_id,
+  classes_id: students.classes_id,
   first_name: xss(students.first_name),
   last_name: xss(students.last_name),
 });
@@ -64,7 +64,10 @@ studentsRouter
   .route("/:students_id")
   .all((req, res, next) => {
     const { students_id } = req.params;
-    studentsService
+      if(!parseInt(students_id))
+      return res.status(404)
+                .json({ error: { message: "id must be an integer" } });
+      studentsService
       .getStudentsById(req.app.get("db"), students_id)
       .then((students) => {
         if (!students) {
@@ -83,7 +86,7 @@ studentsRouter
     res.json(serializeStudent(students));
   })
 
-  //delet students function
+  //delete students function
   .delete((req, res, next) => {
     const { students_id } = req.params;
 
@@ -95,6 +98,7 @@ studentsRouter
       })
       .catch(next);
   })
+
   //PATCH students request function
   .patch(bodyParser, (req, res, next) => {
     const { teachers_id, classes_id, first_name, last_name } = req.body;
