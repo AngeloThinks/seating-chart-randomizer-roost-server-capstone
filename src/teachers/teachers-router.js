@@ -33,17 +33,14 @@ teachersRouter
           .json({ error: { message: `${field} is missing` } });
       }
     }
-    // console.log(req.body);
     const newteacher = {
       first_name: req.body.first_name,
       last_name: req.body.last_name,
       email: req.body.email,
     };
-    // console.log(newteacher,'teachers-router')
     teachersService
       .addTeachers(req.app.get("db"), newteacher)
       .then((teachers) => {
-        // console.log("teacher", teachers);
         logger.info(`teacher with id ${teachers.id} created`);
         res.status(201).location(`/teachers/${teachers.id}`).json(teachers);
       })
@@ -74,13 +71,13 @@ teachersRouter
   });
 
 //DELETE Teachers function
-teachersRouter.route("/:id").delete((req, res, next) => {
+teachersRouter
+.route("/:id").delete((req, res, next) => {
   const { id } = req.params;
 
   teachersService
     .deleteTeachers(req.app.get("db"), id)
     .then(() => {
-      // console.log("teachers", teachers_id);
       logger.info(`Teachers with id ${id} deleted`);
       return res.status(204).end();
     })

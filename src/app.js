@@ -21,7 +21,6 @@ app.use('/classes',classesRouter);
 
 // routes ::::::::
 app.get('/', (req, res)=>{
-	console.log("app.get in app.js route")
 	res.status(200).end();
 });
 

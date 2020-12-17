@@ -30,7 +30,7 @@ const studentsService = {
       .then((students) => students[0]);
   },
   deleteStudents(knex, id) {
-    return knex.from("students").where("id", id).delete();
+    return knex.from("students").where({id}).del();
   },
   updateStudents(knex, id, students) {
     return knex.from("students").where("id", id).update(students);

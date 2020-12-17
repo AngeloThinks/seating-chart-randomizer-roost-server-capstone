@@ -42,18 +42,15 @@ studentsRouter
           .json({ error: { message: `${field} is missing` } });
       }
     }
-    // console.log(req.body);
     const newStudent = {
       teachers_id: req.body.teachers_id,
       classes_id: req.body.classes_id,
       first_name: req.body.first_name,
       last_name: req.body.last_name,
     };
-    // console.log(newStudent,'new student router')
     studentsService
       .addStudents(req.app.get("db"), newStudent)
       .then((students) => {
-        // console.log("student", students);
         logger.info(`student with id ${students.id} created`);
         res.status(201).location(`/students/${students.id}`).json(students);
       })
@@ -86,12 +83,12 @@ studentsRouter
     res.json(serializeStudent(students));
   })
 
-  //delete students function
+  //DELETE students function
   .delete((req, res, next) => {
     const { students_id } = req.params;
 
     studentsService
-      .deleteStudent(req.app.get("id"), students_id)
+      .deleteStudents(req.app.get("db"), students_id)
       .then(() => {
         logger.info(`student with id ${students_id} deleted`);
         res.status(204).end();
@@ -110,7 +107,6 @@ studentsRouter
       first_name,
       last_name,
     };
-    console.log("studentsUpdates", studentsUpdates);
 
     if (Object.keys(studentsUpdates).length == 0) {
       logger.info(`student must have values to update`);
@@ -127,13 +123,10 @@ studentsRouter
   });
 
 // randomize method/function
-//remove teachers_id from randomize
 studentsRouter
   .route("/randomize/:classes_id")
   .get((req, res, next) => {
-    console.log("HELLO THERE")
     const { classes_id } = req.params;
-    console.log(classes_id, "This is the classes");
 
     studentsService
       .getStudentsByClassesId(req.app.get("db"), classes_id)
