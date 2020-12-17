@@ -1,77 +1,31 @@
-# Capstone Project Title (to do now)
-<!-- One line description of what this app is doing and who is it for -->
-Roost - An app designed for teachers to randomize seating charts.
+Roost API Server- An app designed for teachers to randomize seating charts.
 
+Live Links:
+React app here: https://roost-client.vercel.app/
+and Node app here: https://afternoon-inlet-82835.herokuapp.com
 
-### 1. Working Prototype (to do later)
-(Example) You can access a working prototype of the React app here: https://your-app-client.herokuapp.com/ and Node app here: https://your-app-server.herokuapp.com/
+Description:
+API for Roost Application. The API stores students names, Teacher names, and classes. Together it will generate a roster that the user will be able to shuffle their students names. The Roost application is used to generate a shuffled list of names within a user created roster. A visitor and user are not required to login.
 
+As a visitor or user, you will be able to access the home, about, and roster pages. In the home page you will be able to preview the app and decide if you would like to get started with the use of the application. 
 
-
-### 2. User Stories (to do now)
-This app is for two types of users: a visitor and a logged-in user
-
-###### (Example) Landing Page (Importance - High) (Est: 1h)
-* as a visitor
-* I want to understand what I can do with this app (or sign up, or log in)
-* so I can decide if I want to use it
-
-###### (Example) Login Page (Importance - High) (Est: 3h)
-* As a returning register user
-* I want to enter my password and username to use this app,
-* So I can have access to my account.
-
-###### (Example) Sign Up (Importance - High)  (Est: 3h)
-* As a visitor
-* I want to register to use this app
-* So I can create a personal account.
-
-###### (Example) Home Page (Importance - Medium)  (Est: 2h)
-* As a logged-in user,
-* I want to be able to preview the content of the app,
-* So i can decide what section I want to navigate to.
+Every User has the ability to create a roster.Within the roster a user is able to add and delete a student from their roster. Furthermore, a user is able to shuffle their list of students.
 
 
 
-### 3. Functionality (to do now)
-The app's functionality includes:
-* (Example) Every User has the ability to create an account
+Technology Used:
+Front-End: HTML5, CSS3, JavaScript ES6, React
+Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
+Development Environment: Heroku, DBeaver, Vercel
 
+Back-End Structure:
+https://afternoon-inlet-82835.herokuapp.com
 
-
-### 4. Technology (done)
-* Front-End: HTML5, CSS3, JavaScript ES6, React
-* Back-End: Node.js, Express.js, Mocha, Chai, RESTful API Endpoints, Postgres
-* Development Environment: Heroku, DBeaver
-
-
-
-### 5. Wireframes (to do now)
-(Example) Landing Page
-:-------------------------:
-![Landing Page](/github-images/wireframes/landing-page-wireframe.png)
-Register Page
-![Register Page](/github-images/wireframes/register-page-wireframe.png)
-
-
-
-### 6. Front-end Structure - React Components Map (to do later)
-* (Example) __Index.js__ (stateless)
-    * __App.js__ (stateful)
-        * __LandingPage.js__ (stateful) - gets the _"prop name"_ and the _"callback prop name"_ from the __App.js__
-            * __Login.js__ (stateful) -
-            * __Register.js__ (stateful) -
-        * __Navbar.js__ (stateless) -
-
-
-
-### 7. Back-end Structure - Business Objects (to do later)
 * teachers (database table)(parent to students to table)
     * id (auto-generated)
     * first_name (varchar255) (validation alpha characters with spaces min.3 max.255)
     * last_name (varchar255) (validation alpha characters with spaces min.3 max.255)
     * email (varchar255) (email validation)
-    * password (varchar255) (at least 8 chars, at least one alpha and a special character validation)
 
 * classes (database table)(parent to students table)
     * id (auto-generated)
@@ -84,11 +38,97 @@ Register Page
 	* first_name (varchar255) (validation alpha characters with spaces min.3 max.255)
     * last_name (varchar255) (validation alpha characters with spaces min.3 max.255)
 
+App Structure:
+migrations folder contains all the sql files necesay for the DB setup
+public folder contains the View related files
+seeds folder contains the files for the database
+src folder contains the Controller related files
+server.js is the entry point of the Controller logic (where all the general app settings live)
+app.js is the starting point for the routes
+classes, students, and teachers folders contains the router with all the API endpoints and 
+service files for the Controller connection witht the Model
+logger.js contains middleware functions that are used by the controller in multiple places
+test folder contains the Test files
 
-### 8. API Documentation (to do later)
+GET classes: https://afternoon-inlet-82835.herokuapp.com/classes
+
+Example Response:
+[
+    {
+        "id": "1",
+        "name": "chemistry"
+    },
+    {
+        "id": "2",
+        "name": "math"
+    }
+]
+
+
+
+GET Endpoint: https://afternoon-inlet-82835.herokuapp.com/students
+
+Example Response:[
+    {
+        "id": 41,
+        "teachers_id": 1,
+        "classes_id": 2,
+        "first_name": "Rosa",
+        "last_name": "Beswetherick"
+    },
+    {
+        "id": 42,
+        "teachers_id": 1,
+        "classes_id": 2,
+        "first_name": "Tara",
+        "last_name": "Clewer"
+    },
+    {
+        "id": 43,
+        "teachers_id": 1,
+        "classes_id": 2,
+        "first_name": "Nehemiah",
+        "last_name": "Mathonnet"
+    },
+    {
+        "id": 44,
+        "teachers_id": 1,
+        "classes_id": 2,
+        "first_name": "Maurine",
+        "last_name": "Ferrulli"
+    },
+    {
+        "id": 45,
+        "teachers_id": 1,
+        "classes_id": 2,
+        "first_name": "Art",
+        "last_name": "Castanares"
+    }
+]
+
+
+RANDOMIZE GET Endpoint:https://afternoon-inlet-82835.herokuapp.com/students
+
+Example Response:[
+    {
+        "id": 17,
+        "teachers_id": 1,
+        "classes_id": 1,
+        "first_name": "Shirlene",
+        "last_name": "Jeynes"
+    },
+    {
+        "id": 22,
+        "teachers_id": 1,
+        "classes_id": 1,
+        "first_name": "Doloritas",
+        "last_name": "Fass"
+    }
+]
+
 API Documentation details:
 * GET/students
-    * URL: http://localhost:8000/students
+    * URL: https://afternoon-inlet-82835.herokuapp.com
     * Response: 
         ```json
         [
@@ -102,31 +142,26 @@ API Documentation details:
         ]
         ```
 
-### 9. Screenshots (to do later)
-(Example) Landing Page
+Landing Page
 :-------------------------:
-![Landing Page](/github-images/screenshots/landing-page-screenshot.png)
-Register Page
-![Register Page](/github-images/screenshots/register-page-screenshot.png)
+![Landing Page](Roost-Landing-Page.png)
 
+Roster Page
+![Roster Page](Roost-Roster-Page.png)
 
-
-### 10. Development Roadmap (to do later)
 This is v1.0 of the app, but future enhancements are expected to include:
-* (Example) add more functionality
+Add save, edit, print and email functionality. 
 
+How to Set it up:
+Use the command line in your terminal to clone repository. Navigate into the project folder and run the following in terminal:
 
+Install the dependencies for the project:
+npm install
 
-### 11. How to run it (done) enter Git clone commands
-Use command line to navigate into the project folder and run the following in terminal
+If there are high vulnerabilities reported during the install:
+npm audit fix --force
 
-##### Local React scripts
-* To install the react project ===> npm install
-* To run react (on port 3000) ===> npm start
-* To run tests ===> npm run test
-
-##### Local Node scripts
-* To install the node project ===> npm install
-* To migrate the database ===> npm run migrate -- 1
-* To run Node server (on port 8000) ===> npm run dev
-* To run tests ===> npm run test
+Node Scripts:
+To install the node project ===> npm install
+To migrate the database ===> npm run migrate 
+To run Node server (on port 8000) ===> npm run dev

@@ -96,32 +96,6 @@ studentsRouter
       .catch(next);
   })
 
-  //PATCH students request function
-  .patch(bodyParser, (req, res, next) => {
-    const { teachers_id, classes_id, first_name, last_name } = req.body;
-    const { students_id } = req.params;
-    const studentsUpdates = {
-      id: students_id,
-      teachers_id,
-      classes_id,
-      first_name,
-      last_name,
-    };
-
-    if (Object.keys(studentsUpdates).length == 0) {
-      logger.info(`student must have values to update`);
-      return res.status(400).json({
-        error: { message: `patch request must supply values` },
-      });
-    }
-    studentsService
-      .updateStudents(req.app.get("db"), students_id, studentsUpdates)
-      .then((updatedStudent) => {
-        logger.info(`student with id ${students_id} updated`);
-        res.status(204).end();
-      });
-  });
-
 // randomize method/function
 studentsRouter
   .route("/randomize/:classes_id")
