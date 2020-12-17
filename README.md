@@ -129,18 +129,18 @@ Example Response:[
 API Documentation details:
 * GET/students
     * URL: https://afternoon-inlet-82835.herokuapp.com
-    * Response: 
-        ```json
-        [
-            {
-                "id": "2",
-                "teachers_id": "1",
-                "classes_id": "1",
-                "first_name": "Biron",
-                "last_name": "Doge"
-            }
-        ]
-        ```
+    * Response:[
+    {
+	"id": 2,
+	"teachers_id": 1,
+	"classes_id": 1,
+	"first_name": "Biron",
+	"last_name": "Doge"
+    }
+] 
+ 
+ 
+
 
 Landing Page
 :-------------------------:
