@@ -5,5 +5,5 @@ insert into teachers (
 )
 
 values
-('John','Doe','john@email.com')
+('John','Doe','john@email.com');
 

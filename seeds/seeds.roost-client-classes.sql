@@ -5,3 +5,4 @@ insert into classes(
 values
 ('chemistry'),
 ('math')
+;
