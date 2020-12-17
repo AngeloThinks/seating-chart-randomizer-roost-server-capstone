@@ -5,3 +5,4 @@ const TEST_DATABASE_URL = process.env.TEST_DATABASE_URL || 'postgresql://angelov
 
 
 module.exports = { PORT, NODE_ENV, DATABASE_URL, TEST_DATABASE_URL}
+
